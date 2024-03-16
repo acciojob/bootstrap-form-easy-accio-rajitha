@@ -20,8 +20,8 @@
 <body>
 	<h3 style="text-align:center">Internship Form</h3>
 	<form>
-		<label for="first-name-input" class="form-control">First Name</label><br>
-		<input type="text" id="first-name-input" name="first-name" required>
+		<label for="first-name-input" >First Name</label><br>
+		<input type="text" id="first-name-input" name="first-name"  class="form-control" required>
         <div class="invalid-feedback">First name required!</div><br>
 
 		<label for="last-name-input">Last Name</label><br>
@@ -49,13 +49,11 @@
 		<input type="text" id="roll-no-input" name="roll-no"required>
         <div class="invalid-feedback">Please provide a valid Roll no.</div><br>
 
-        <div class="form-check">
-            <div class="form-check-input">
-                <input type="checkbox" id="conditions-checkbox" name="terms-checkbox" required>
-            </div>
-            <div class="form-check-label">
-                <label for="conditions-checkbox">Agree to terms and conditions</label>
-            </div>
+		<label class="form-check-label" for="conditions-checkbox">
+            <input type="checkbox" id="conditions-checkbox" class="form-check-input" required>
+            Agree to terms and conditions
+        </label>
+       
 			 <div class="invalid-feedback">You must agree before submitting.</div><br>
         </div>
         
